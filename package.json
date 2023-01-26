@@ -1,0 +1,19 @@
+{
+  "name": "live-kit",
+  "version": "1.0.0",
+  "description": "Implementing Live Streaming",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "livekit-server-sdk": "^1.1.0",
+    "mongoose-paginate-v2": "^1.7.1",
+    "path": "^0.12.7"
+  }
+}
