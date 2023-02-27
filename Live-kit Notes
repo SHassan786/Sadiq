@@ -1,0 +1,53 @@
+- WebRTC, a powerful peer-to-peer communications protocol—in truth, the intertwining of 9-10 subprotocols—with ubiquitous support across every major browser and mobile device.
+
+- Live kit is used to create a room and handle room Api's while Egress helps to record or liveStream rooms.
+
+- API's for live kit are already made on twirp on a specific format we can directly call them.
+
+- API's for egress are available on https://github.com/livekit/server-sdk-js/blob/main/src/EgressClient.ts
+
+- LiveKit has built-in APIs that let you to manage rooms and update or moderate participants. These APIs are designed for use by your backend and are fully distributed across multiple nodes: any instance is capable of fulfilling requests about any room or participant.
+
+- Server APIs are built with Twirp, and differ from a traditional REST interface. Arguments are passed by POSTing a JSON body to an endpoint.
+
+- These Api's are mainly used to handle room data such as creating, dleteing removing rooms and their participants
+
+- Egress is simply recording and liveStreaming our live-kit room
+
+- LiveKit Egress gives you a powerful and consistent set of APIs to export any room or individual tracks from a LiveKit session.
+
+- It supports recording to a MP4 file or HLS segments, as well as exporting to livestreaming services like YouTube Live, Twitch, and Facebook via RTMP(s).
+
+- Room Composite Egress export an entire room's video and/or audio using a web layout rendered by chrome.
+
+- Track Composite Egress Sync and export up to one audio and one video track. Will transcode and mux.
+
+- Track Export individual tracks directly. Video tracks are not transcoded.
+
+- We need a url to host livestreaming. We can use our cloud host for hosting.
+
+- Most of the work has been done on frontend. What i get for backend is that when client will send the room number or username, we will generate a token against that room number for a person and make him enter into a room. When the token expires, person came out of the room. 
+
+- What we can do more is that we can assign tokens to the user at different hosting urls. If the url and token matches from backend, the user will enter into a respective live stream hosting url.
+
+FLOW FOR STREAMING:
+- First we should have a hosting url
+- Secondly we should have a token that is associated with that hosting url
+- We can also generate new tokens against that hosting url so multiple users can access streaming.
+
+- A person will have an id
+- token will be generated against the id for the respective hosting url.
+
+- Once the verification is done, our frontend will connect the user to that hosting url.
+
+QUERIES:
+- 1 Room ka aik token banega jo sab users mein distribute hoga ya phir room bhi unique hoga aur token bhi?
+
+- How to create a room? Room function is ambigous 
+
+
+
+
+
+
+
