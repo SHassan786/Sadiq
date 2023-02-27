@@ -1,0 +1,31 @@
+TASK: PRICING ENGINE:
+
+1) Sellers View:
+-> Using Regression Model
+- Resources:
+- https://www.youtube.com/watch?v=iRCaMnR_bpA
+- https://towardsdatascience.com/predicting-car-price-using-machine-learning-8d2df3898f16
+- file:///home/shehryar/Downloads/1079-Article%20Text-4342-1-10-20210629.pdf
+- https://www.google.com/search?q=car+price+prediction+using+machine+learning&sxsrf=AJOqlzWulkRVyLE-DnLyohJUJt61rJMy7g%3A1675941308079&ei=vNXkY8a-BP2X9u8P6cKe4AM&oq=Car+price+pred&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAxgCMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoKCAAQRxDWBBCwAzoHCCMQrgIQJzoHCCMQ6gIQJzoNCC4QjwEQ6gIQtAIYAToNCAAQjwEQ6gIQtAIYAToECCMQJzoFCAAQkQI6BAgAEEM6CgguEMcBENEDEEM6CwgAEIAEELEDEIMBOhEILhCABBCxAxCDARDHARDRAzoHCAAQsQMQQzoKCAAQsQMQgwEQQzoICAAQgAQQsQM6DgguEIAEELEDEMcBENEDOggILhCABBCxAzoHCAAQyQMQQzoICC4QsQMQgAQ6BwguELEDEENKBAhBGABKBAhGGAFQ9QFY7yhgrE5oAnABeASAAZYEiAHSMZIBCTItOC42LjQuMZgBAKABAbABFMgBCMABAdoBBggBEAEYCg&sclient=gws-wiz-serp#fpstate=ive&vld=cid:d7d6aacf,vid:L3OtLaCbJC8
+
+Path:
+- Pick raw data
+- Clean the data
+- Apply regression model
+- Make a best train test spil which gives high r2 score predicting accuracy, we can also check  adjusted r2 for feature selection
+- Once the model is ready embed that into our website
+
+
+2) Buyers View:
+
+- Content based Filtering: Filtering based on content of the product and recommending him the product with the similar key attributes. We see item similarity.
+
+- Collarborative based Filtering: giving suggestions to other users which have similar interest based on previous records. We see user similarity.
+
+Queries:
+- Product 
+
+- First, show the same product with the minimum price if exist
+- If such product is not available, then show similar product with the cheaper price 
+- Else show related products with that product
+
