@@ -9,7 +9,7 @@ dotenv.config({path: './config.env'});
 app.use("/liveStream", liveRouter);
 
 // const port = process.env.PORT;
-app.listen(4000, () =>{
+app.listen(3000, () =>{
     console.log('App is working')
 });
 
